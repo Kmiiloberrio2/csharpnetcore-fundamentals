@@ -11,8 +11,9 @@ namespace CoreEscuela
 
             escuela.Pais = "Colombia";
             escuela.Ciudad = "Bogota";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
 
-            Console.WriteLine(escuela.Nombre);
+            Console.WriteLine(escuela);
         }
     }
 }
