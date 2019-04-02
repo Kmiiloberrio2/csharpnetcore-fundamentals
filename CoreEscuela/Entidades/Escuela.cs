@@ -21,6 +21,14 @@ namespace CoreEscuela.Entidades
         public Escuela(string nombre, int año) => (Nombre, AñoDeCreacion) = (nombre, año);
 
 
+        public Escuela(string nombre, int año, TiposEscuela tipo, string pais = "", string ciudad = "")
+        {
+            (Nombre, AñoDeCreacion) = (nombre, año);
+            TipoEscuela = tipo;
+            Pais = pais;
+            Ciudad = ciudad;
+        }
+
         public void Timbrar()
         {
             Console.Beep(987, 1000); //Si

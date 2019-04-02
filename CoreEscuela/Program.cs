@@ -7,11 +7,7 @@ namespace CoreEscuela
     {
         private static void Main(string[] args)
         {
-            Escuela escuela = new Escuela("Platzi Academy", 2012);
-
-            escuela.Pais = "Colombia";
-            escuela.Ciudad = "Bogota";
-            escuela.TipoEscuela = TiposEscuela.Secundaria;
+            Escuela escuela = new Escuela("Pascual Bravo", 1984, TiposEscuela.PreEscolar, ciudad: "Medellin");
 
             Console.WriteLine(escuela);
         }
